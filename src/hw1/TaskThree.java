@@ -5,7 +5,7 @@ public class TaskThree {
      double a = 2;
      double b = 2;
      double c = 3;
-     double s = 2*(a*c+b*c);
+     double s = 2*(a*b+b*c+a*c);
      System.out.println(s);
     }
 }
