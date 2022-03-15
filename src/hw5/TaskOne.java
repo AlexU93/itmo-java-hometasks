@@ -10,14 +10,13 @@ public class TaskOne {
         int size = in.nextInt();
         Scanner sr = new Scanner(System.in);
         String[] arrs1 = new String[size];
+
         for (int i = 0; i < size; i++) {
             System.out.println("Введите слово");
             String word = sr.nextLine();
-            if (sr.equals(arrs1[i]) == true) {
-                arrs1[i] = word;
-                System.out.println(sr.equals(arrs1[i]));
-            }
+            arrs1[i] = word;
         }
+
         System.out.println(Arrays.toString(arrs1));
     }
 }
