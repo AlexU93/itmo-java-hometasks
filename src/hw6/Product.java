@@ -38,4 +38,37 @@ public class Product {
         return calories;
     }
 
+    public void setCarbohydrates (int carbohydrates) {
+        if (carbohydrates<=0){
+            throw new IllegalArgumentException("Значение должно быть больше 0");
+        }
+        this.carbohydrates = carbohydrates;
+    }
+
+    public int getCarbohydrates (){
+        return carbohydrates;
+    }
+
+    public void setProtein (int protein) {
+        if (protein<=0){
+            throw new IllegalArgumentException("Значение должно быть больше 0");
+        }
+        this.protein = protein;
+    }
+
+    public int getProtein (){
+        return protein;
+    }
+
+    public void setFats (int fats) {
+        if (fats<=0){
+            throw new IllegalArgumentException("Значение должно быть больше 0");
+        }
+        this.fats = fats;
+    }
+
+    public int getFats (){
+        return fats;
+    }
+
 }
