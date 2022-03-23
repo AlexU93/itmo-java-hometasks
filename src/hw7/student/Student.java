@@ -7,7 +7,8 @@ import java.util.Arrays;
 
 
 public class Student extends SkillSubject {
-    protected String[] arrStudents = new String[4];
+    private int level;
+
     public Student(String name, int age, String subject) {
         super(name, age, subject);
     }
@@ -16,21 +17,15 @@ public class Student extends SkillSubject {
         System.out.println("Student name" + "-" + name + " " + "Subject" + "-" + subject);
     }
 
-    public void addArrStudent(Student student) {
-        for (int i = 1; i < arrStudents.length; i++) {
-            this.arrStudents[i] = student.toString();
-        }
-        System.out.println(Arrays.toString(arrStudents));
+    public int getLevel() {
+        return level;
     }
 
-
-    public void beTeacher(int skill, int skillTeacher) {
-        if (skill <= skillTeacher) {
-            skill = skill + (0 * (int) Math.random() * skillTeacher);
-            return;
-        }
+    public void beTeacher(int skillTeacher) {
+        level = level + ((int) Math.random() * skillTeacher);
     }
-
 }
+
+
 
 
